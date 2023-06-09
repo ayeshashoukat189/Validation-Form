@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="Stylesheet" href="style.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <form name="myForm" id="form-signup" onsubmit="return validateSignup()">
+            <h1>Sign Up</h1>
+
+            <!------Name-->
+            <label class="label-signup">Name</label><br>
+            <input type="text" placeholder="Enter your name" class="input-signup" required><br>
+
+            <!------Email-->
+            <label class="label-signup">Email Address</label><br>
+            <input type="email" placeholder="Enter your email address" class="input-signup" required><br>
+
+            <!------Password-->
+            <label for="password" class="label-signup">Password</label><br>
+            <input name="password" type="password" placeholder="Enter Password" class="input-signup" required><br>
+
+            <!------Password-->
+            <label for="confirmPassword" class="label-signup">Confirm Password</label><br>
+            <input name="confirmPassword" type="password" placeholder="Enter password again" class="input-signup" required><br><br>
+
+            <p id="signupError" style="color: red; text-align: center; margin-top:-20px;" ></p>
+            <input id="submit-button" type="submit" value="SignUp">
+            <label class="p-login" style="margin-top: 100px;">Already have an account?<a href="login.html" style="color:red">Log In</a></label>
+        </form>
+        
+    </body>
+</html>

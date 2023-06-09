@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Log In</title>
+        <link rel="Stylesheet" href="style.css">
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <form name="myForm" id="form-login" onsubmit="return validateLogin()">
+            <h1 id="h1-login" >Log In</h1>
+
+            <!------Email-->
+            <label for="email" class="label-login">Email Address</label><br>
+            <input name="email"type="email" placeholder="Enter your email address" class="input-login"><br>
+
+            <!------Password-->
+            <label for="password" class="label-login">Password</label><br>
+            <input name="password" type="password" placeholder="Enter Password" class="input-login"><br>
+            <i class="far fa-eye" style="margin-left: -30px; cursor: pointer;" id="togglePassword" onclick="togglePasswordVisibility()"></i>
+
+            <p id="loginError" style="color: red; text-align: center; margin-top:20px;" ></p>
+            <input id="submit-button-login" type="submit" value="SignUp">
+            <label id="p-login" style="margin-bottom: 100px;">Create an Account <a href="signup.html" style="color:red">Sign Up</a></label>
+        </form>
+        
+    </body>
+</html>
